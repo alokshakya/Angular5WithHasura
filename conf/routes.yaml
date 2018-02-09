@@ -212,5 +212,5 @@ alok:
     upstreamService:
       name: alok
       namespace: '{{ cluster.metadata.namespaces.user }}'
-    upstreamServicePath: /FirstAngular5/src/index.html
+    upstreamServicePath: /
     upstreamServicePort: 80
