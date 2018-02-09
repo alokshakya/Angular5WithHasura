@@ -204,3 +204,13 @@ notify:
     corsPolicy: allow_all
 
 # To see actual endpoints for these routes, use `$ hasura ms ls`
+
+#my own microservice alok routing
+alok:
+  /:
+    corsPolicy: allow_all
+    upstreamService:
+      name: alok
+      namespace: '{{ cluster.metadata.namespaces.user }}'
+    upstreamServicePath: /
+    upstreamServicePort: 80
