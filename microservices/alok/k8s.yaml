@@ -23,7 +23,7 @@ items:
           imagePullPolicy: IfNotPresent
           name: alok
           ports:
-          - containerPort: 4200
+          - containerPort: 8080
             protocol: TCP
           resources: {}
         securityContext: {}
@@ -42,7 +42,7 @@ items:
     ports:
     - port: 80
       protocol: TCP
-      targetPort: 8080
+      targetPort: 4200
     selector:
       app: alok
     type: ClusterIP
