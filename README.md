@@ -1,6 +1,6 @@
 # base
 
-A blank template to be used as a starting point to build projects on Hasura. A "project" is a "gittable" directory in the file system, which captures all the information regarding clusters, services and migrations. It can also be used to keep source code for custom services that you write.
+A blank template to be used as a starting point to build Angular 5 projects on Hasura. A "project" is a "gittable" directory in the file system, which captures all the information regarding clusters, services and migrations. It can also be used to keep source code for custom services that you write.
 
 ## Files and Directories
 
@@ -47,11 +47,11 @@ This file contains some metadata about the project, namely a name, description a
 Info about the clusters added to this project can be found in this file. Each cluster is defined by it's name allotted by Hasura. While adding the cluster to the project you are prompted to give an alias, which is just hasura by default. The `kubeContext` mentions the name of kubernetes context used to access the cluster, which is also managed by hasura. The `config` key denotes the location of cluster's metadata on the cluster itself. This information is parsed and cluster's metadata is appended while conf is rendered. `data` key is for holding custom variables that you can define.
 
 ```yaml
-- name: h34-ambitious93-stg
-  alias: hasura
-  kubeContext: h34-ambitious93-stg
+- alias: hasura
   config:
     configmap: controller-conf
     namespace: hasura
-  data: null  
+  data: null
+  kubeContext: explosive93
+  name: explosive93  
 ```
