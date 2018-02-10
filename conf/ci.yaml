@@ -21,4 +21,4 @@ remotes:
   '{{ cluster.metadata.namespaces.user }}.alok':
         alok:
           dockerfile: microservices/alok/FirstAngular5/Dockerfile
-          path: microservices/alok
+          path: microservices/alok/FirstAngular5
