@@ -23,7 +23,7 @@ items:
           imagePullPolicy: IfNotPresent
           name: alok
           ports:
-          - containerPort: 8080
+          - containerPort: 4200
             protocol: TCP
           resources: {}
         securityContext: {}
