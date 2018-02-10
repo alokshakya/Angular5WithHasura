@@ -4,6 +4,6 @@ WORKDIR /usr/src/app
 COPY package.json /usr/src/app
 RUN npm install
 COPY . /usr/src/app
-EXPOSE 4200
-#CMD ["npm","start"]
-RUN ng serve -p 8080
+EXPOSE 8080
+CMD ["npm","start"]
+#RUN ng serve -p 8080
