@@ -13,12 +13,16 @@ remotes:
   #       path: microservices/app
   #       dockerfile: microservices/app/Dockerfile
   
+
+
   # Default remote to push code and configuration
   {{ cluster.name }}:        # DO NOT edit this line
     <<: {}                   # DO NOT edit this line
     
-  # Add output of `hasura conf generate-remote` below this line
-  '{{ cluster.metadata.namespaces.user }}.alok':
-        alok:
-          dockerfile: microservices/alok/FirstAngular5/Dockerfile
-          path: microservices/alok/FirstAngular5
+    # Add output of `hasura conf generate-remote` below this line
+
+    '{{ cluster.metadata.namespaces.user }}.alok':
+      alok:
+        dockerfile: microservices/alok/FirstAngular5/Dockerfile
+        path: microservices/alok/FirstAngular5  
+  
